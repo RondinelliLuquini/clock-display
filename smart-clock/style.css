@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+}
+
+
+#container{ 
+    width: 100vw; 
+    height: 100vh;
+    background-size: cover;
+} 
+
+.saudacao{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: white;
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    text-shadow: 0 0 15px rgba(255, 20, 147, 0.71); 
+}
+
+.info{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: white;
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    text-shadow: 0 0 15px rgba(255, 20, 147, 0.817); 
+}
+
+
+.clock {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color:crimson;
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    text-shadow: 0 0 15px rgba(244, 0, 0, 0.71); 
+    
+
+}

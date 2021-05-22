@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script language="javascript"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "icon" href = "assets/clock.ico">
+
+    <script>
+        // calendario
+            var dt=new Date(); 
+            var dia=dt.getDay(); 
+            var data=dt.getDate();
+            var mes=dt.getMonth();
+            var ano=dt.getFullYear();
+        // arrays
+            var meses = new Array ("Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro");
+            var dias_semana = new Array ("Domingo", "Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quinta-Feira", "Sexta-Feira", "Sábado");
+
+            document.write('<p class="info">' + dias_semana[dia] + ", " + data + " de " + meses[mes] + " de " + ano + '</p>')
+
+        // Mensagem de acordo com horário
+            d = new Date();
+            hora = d.getHours();
+            
+                if(hora < 5)
+                {
+                    document.write('<p class="saudacao">' + "Boa Noite!" + '</p>' );
+                    document.write('<img src="./assets/night.png">');
+                    
+                }
+                else
+                if(hora < 6)
+                {
+                    document.write('<p class="saudacao">' + "Bom Dia!" + '</p>' );
+                    document.write('<img id="container" src="./assets/sunrise_set.png">');
+                }
+                else
+                if(hora < 12)
+                {
+                    document.write('<p class="saudacao">' + "Bom Dia!" + '</p>' );
+                    document.write('<img id="container" src="./assets/morning.png">');
+                }
+                else
+                if(hora < 18)
+                {
+                    document.write('<p class="saudacao">' + "Boa Tarde!" + '</p>' );
+                    document.write('<img id="container" src="./assets/morning.png">');
+                }
+                else
+                {
+                    document.write('<p class="saudacao">' + "Boa Noite!" + '</p>' );
+                    document.write('<img id="container" src="./assets/night.png"> ');
+                }
+
+    </script>     
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
+    
+    <title>Clock-Display</title>
+</head>
+
+<body>
+    
+    <div id="Display" class="clock" onload="showTime()"></div>
+    <script src="app.js"></script>   
+    
+</body>
+</html>
